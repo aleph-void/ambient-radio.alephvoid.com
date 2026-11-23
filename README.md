@@ -8,12 +8,13 @@ Live at [ambient-radio.alephvoid.com](https://ambient-radio.alephvoid.com/). Sib
 
 ## What it is
 
-A single static HTML page. No build step, no dependencies, no framework — `index.html` contains the markup, styles, and the one script that mounts the YouTube embeds. Deployed via GitHub Pages; `CNAME` pins the custom domain.
+A single static HTML page. No build step, no dependencies, no framework — `index.html` contains the markup, styles, and the one script that mounts the YouTube embeds. Deployed to GitHub Pages by the workflow in `.github/workflows/deploy.yml` on every push to `main`; `CNAME` pins the custom domain.
 
 ```
 index.html      markup + inline CSS + embed script
 assets/         Aleph Void logo (SVG favicon, PNG for Open Graph)
 CNAME           ambient-radio.alephvoid.com
+.github/         Pages deploy workflow
 ```
 
 ## Local development
